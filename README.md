@@ -117,21 +117,18 @@ This page provides supplementary tables and figures referenced in the rebuttal f
 
 ---
 
-## S9: Multi-concept suppression on arXiv (K = 30, lambda = 2.0, n_profile = 20)
+**S9: Multi-concept suppression on arXiv** *(K = 30, lambda = 2.0, n_profile = 20)*
 
-| Group  | Concepts             | M | Hit@K ↑ | Completeness ↑ | Ctrl MRR Drop ↓ | Interference ↓ |
-|--------|----------------------|---|---------|----------------|-----------------|----------------|
-| Near-2 | CV, ML               | 2 | 0.642   | 1.000          | 0.105           | -0.425         |
-| Far-2  | CV, Prob.            | 2 | 0.675   | 1.000          | 0.119           | -0.517         |
-| Near-3 | CV, ML, CL           | 3 | 0.683   | 1.000          | 0.108           | -0.442         |
-| Far-3  | CV, Prob., Gen.Rel.  | 3 | 0.600   | 1.000          | 0.054           | -0.383         |
+| Group | Concepts | M | Avg Hit@K Drop ↑ | Ctrl MRR Drop ↓ | Interference ↓ |
+|:--|:--|--:|--:|--:|--:|
+| Near-2 | CV, ML | 2 | 0.642 | 0.105 | -0.425 |
+| Far-2 | CV, Prob. | 2 | 0.675 | 0.119 | -0.517 |
+| Near-3 | CV, ML, CL | 3 | 0.683 | 0.108 | -0.442 |
+| Far-3 | CV, Prob., Gen.Rel. | 3 | 0.600 | 0.054 | -0.383 |
+| Mixed-4 | CV, ML, Prob., Gen.Rel. | 4 | 0.492 | 0.041 | -0.275 |
+| Mixed-5 | CV, ML, CL, Prob., Gen.Rel. | 5 | 0.575 | 0.311 | -0.358 |
 
-Abbreviations:
-- CV = Computer Vision
-- ML = Machine Learning
-- CL = Computation & Language
-- Prob. = Probability
-- Gen.Rel. = General Relativity
+**Abbreviations:** CV = Computer Vision; ML = Machine Learning; CL = Computation & Language; Prob. = Probability; Gen.Rel. = General Relativity.
 
 ---
 

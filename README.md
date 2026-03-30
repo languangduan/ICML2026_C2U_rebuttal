@@ -188,3 +188,12 @@ Encode latencies are averaged over 95 queries after discarding 5 warm-up queries
 | Profile Construct  | 60        | one-time offline per target concept; n_profile = 20 texts    |
 | Query Encode (Base)| 1.83      | per query                                                    |
 | Query Encode (C2U) | 1.92      | per query; overhead +4.6%                                    |
+
+---
+
+**Figure 3.** Safety-Utility Trade-off Analysis across Datasets. 
+    Each row displays the sensitivity of **Safety** (Left, Blue) and **Utility** (Right, Red) to varying Steering Strength ($\lambda$) and Sparsity ($K$).
+    **Left (Safety):** Darker blue indicates higher unlearning efficacy.
+    **Right (Utility):** Lighter red indicates better utility retention (lower model perturbation).
+    The heatmaps demonstrate that moderate $\lambda$ values achieve the optimal balance.
+![3 Safety-Utility Trade-off Analysis across Datasets](./safety_utility.png)

@@ -17,7 +17,7 @@ This page provides supplementary tables and figures referenced in the rebuttal f
 
 **Figure S1.** Suppression saturates at K >= 90; collateral damage keeps rising. Default K = 30.
 
-![S1 K Ablation](graphs/s1_k_ablation.png)
+![S1 K Ablation](./s1_k_ablation.png)
 
 ---
 
@@ -54,7 +54,7 @@ This page provides supplementary tables and figures referenced in the rebuttal f
 
 **Figure S4.** Hit@K Drop rises with noise while Cos Drop stays flat (about 0.029): contamination broadens rather than destroys the target direction.
 
-![S4 Contamination](graphs/s4_contamination.png)
+![S4 Contamination](./s4_contamination.png)
 
 ---
 
@@ -177,7 +177,7 @@ Abbreviations:
 
 **Figure S11.** Heatmap of Table S11. Colors are scaled per column (green = good, red = bad). Dark red borders mark adverse-transfer rows (Hit@K Drop < 0), all involving BiosBias as target.
 
-![S11 Transfer Heatmap](graphs/s11_transfer_heatmap.png)
+![S11 Transfer Heatmap](./s11_transfer_heatmap.png)
 
 ---
 

@@ -2,7 +2,7 @@
 
 This page provides supplementary tables and figures referenced in the rebuttal for **C2U**.
 
-Unless otherwise noted, the default setting is **arXiv** with **$$N=1024$$, $$K=30$$, $$\lambda=2.0$$, and $$n_{\text{profile}}=20$$**.
+Unless otherwise noted, the default setting is **arXiv** with **$N=1024$, $K=30$, $\lambda=2.0$, and $n_{\text{profile}}=20$**.
 
 **Metric conventions.** We use a consistent naming scheme across all tables:
 - **Hit@K Drop ↑**: larger values indicate stronger target suppression.
@@ -198,6 +198,6 @@ Encode latencies are averaged over 95 queries after discarding 5 warm-up queries
 
 ---
 
-**Figure 3.** Suppression--utility trade-off across datasets. Each row shows the sensitivity of **suppression** (left, blue) and **utility retention** (right, red) to steering strength (**$$\lambda$$**) and sparsity (**$$K$$**). Darker blue indicates stronger suppression, and lighter red indicates better utility retention (lower non-target degradation). The heatmaps show that moderate $$\lambda$$ values often provide the best balance.
+**Figure 3.** Suppression--utility trade-off across datasets. Each row shows the sensitivity of **suppression** (left, blue) and **utility retention** (right, red) to steering strength (**$\lambda$**) and sparsity (**$K$**). Darker blue indicates stronger suppression, and lighter red indicates better utility retention (lower non-target degradation). The heatmaps show that moderate $\lambda$ values often provide the best balance.
 
 ![3 Safety-Utility Trade-off Analysis across Datasets](./safety_utility.png)

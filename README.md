@@ -129,16 +129,20 @@ For Table S2, “fixed ratio” means approximately fixed sparsity ratio **$$K/N
 
 ## S9: Multi-concept suppression on arXiv (K = 30, λ = 2.0, n_profile = 20)
 
-| Group   | Concepts                      | M | Avg Hit@K Drop ↑ | Control MRR Drop ↓ | Interference ↓ |
-|:--------|:------------------------------|--:|-----------------:|-------------------:|---------------:|
-| Near-2  | CV, ML                        | 2 | 0.642            | 0.105              | -0.425         |
-| Far-2   | CV, Prob.                     | 2 | 0.675            | 0.119              | -0.517         |
-| Near-3  | CV, ML, CL                    | 3 | 0.683            | 0.108              | -0.442         |
-| Far-3   | CV, Prob., Gen.Rel.           | 3 | 0.600            | 0.054              | -0.383         |
-| Mixed-4 | CV, ML, Prob., Gen.Rel.       | 4 | 0.492            | 0.041              | -0.275         |
-| Mixed-5 | CV, ML, CL, Prob., Gen.Rel.   | 5 | 0.575            | 0.311              | -0.358         |
+| Group   | Concepts                    | M | Hit@K Drop ↑ | Control Delta ↓ | Cos Drop ↑ | Exposure Delta ↓ | Interference ↓ |
+|:--------|:----------------------------|--:|-------------:|----------------:|-----------:|-----------------:|---------------:|
+| Near-2  | CV, ML                      | 2 | 0.642        | 0.105           | 0.055      | -0.177           | -0.425         |
+| Far-2   | CV, Prob.                   | 2 | 0.675        | 0.119           | 0.053      | -0.083           | -0.517         |
+| Near-3  | CV, ML, CL                  | 3 | 0.683        | 0.108           | 0.075      | -0.037           | -0.442         |
+| Far-3   | CV, Prob., Gen.Rel.         | 3 | 0.600        | 0.054           | 0.061      | -0.113           | -0.383         |
+| Mixed-4 | CV, ML, Prob., Gen.Rel.     | 4 | 0.492        | 0.041           | 0.073      | -0.073           | -0.275         |
+| Mixed-5 | CV, ML, CL, Prob., Gen.Rel. | 5 | 0.575        | 0.311           | 0.096      | -0.123           | -0.358         |
 
 **Abbreviations:** CV = Computer Vision; ML = Machine Learning; CL = Computation & Language; Prob. = Probability; Gen.Rel. = General Relativity.
+
+**Note.** In Table S9, **Interference** is defined as
+$\text{Avg Single Hit@K Drop} - \text{Multi-Concept Hit@K Drop},$
+where the multi-concept score is averaged over the target concepts in the group. Lower values are better. Positive values indicate destructive interference, while negative values indicate synergistic suppression relative to the average single-concept baseline.
 
 ---
 

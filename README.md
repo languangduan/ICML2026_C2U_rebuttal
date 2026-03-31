@@ -10,8 +10,6 @@ Unless otherwise noted, the default setting is **arXiv** with **$$N=1024$$, $$K=
 - **Cos Drop ↑**: larger values indicate stronger target cosine suppression.
 - **Exposure Delta ↓**: smaller values indicate lower non-target exposure.
 
-For Table S2, “fixed ratio” means approximately fixed sparsity ratio **$$K/N \approx 0.03$$**.
-
 ---
 
 ## S1: Sensitivity to K on arXiv (N = 1024, λ = 2.0)
@@ -94,25 +92,20 @@ For Table S2, “fixed ratio” means approximately fixed sparsity ratio **$$K/N
 
 ## S7: Failure-mode analysis on TOFU
 
-| Metric                   | Base   | C2U    |
-|--------------------------|--------|--------|
-| Target Hit@K             | 0.85   | 0.00   |
-| Target Cos Sim           | 0.9928 | 0.9494 |
-| Target BTR               | 15.45  | 61.50  |
-| Non-target Hit@K         | 0.822  | 0.120  |
-| Control MRR             | 0.6642 | 0.0520 |
-| Target Exposure on Others| 0.038  | 0.000  |
+| Metric                            | Value |
+|-----------------------------------|------:|
+| Hit@K Drop ↑                      | 0.850 |
+| Cos Drop ↑                        | 0.0434 |
+| Full Suppression (%) ↑            | 100.0 |
+| Partial Suppression (%)           | 0.0 |
+| Suppression Fail (%) ↓            | 0.0 |
+| Exposure Delta ↓                  | -0.038 |
+| Clean Non-target Queries (%) ↑    | 27.8 |
+| Degraded Non-target Queries (%) ↓ | 72.2 |
+| Collateral Exposure (%) ↓         | 0.0 |
 
-**Outcome breakdown**
+**Note.** Table S7 reports a TOFU failure-mode case study. The final three rows report the non-target outcome breakdown after steering.
 
-| Category           | Value |
-|--------------------|-------|
-| Type-A Full (%)    | 100.0 |
-| Type-B Partial (%) | 0.0   |
-| Type-C Fail (%)    | 0.0   |
-| X Clean (%)        | 27.8  |
-| Y Degraded (%)     | 72.2  |
-| Z Collateral (%)   | 0.0   |
 
 ---
 

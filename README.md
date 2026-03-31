@@ -134,7 +134,7 @@ Unless otherwise noted, the default setting is **arXiv** with **$N=1024$, $K=30$
 **Abbreviations:** CV = Computer Vision; ML = Machine Learning; CL = Computation & Language; Prob. = Probability; Gen.Rel. = General Relativity.
 
 **Note.** In Table S9, **Interference** is defined as
-$\text{Avg Single Hit@K Drop} - \text{Multi-Concept Hit@K Drop},$
+$\text{Avg Single Hit@K Drop} - \text{Multi-Concept Hit@K Drop}$,
 where the multi-concept score is averaged over the target concepts in the group. Lower values are better. Positive values indicate destructive interference, while negative values indicate synergistic suppression relative to the average single-concept baseline.
 
 ---

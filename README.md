@@ -1,6 +1,6 @@
 # Supplementary Tables S1--S12
 
-This page provides supplementary tables and figures referenced in the rebuttal for **C$^2$U**.
+This page provides supplementary tables and figures referenced in the rebuttal for $\text{C}^2\text{U}$.
 
 Unless otherwise noted, the default setting is **arXiv** with **$N=1024$, $K=30$, $\lambda=2.0$, and $n_{\text{profile}}=20$**.
 
